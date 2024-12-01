@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #ffffff;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+    z-index: 1000; 
+}
+
+header.hidden {
+    transform: translateY(-100%); 
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 150px;
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.logo h1 {
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif; 
+    color: #000; 
+    margin: 0; 
+}
+
+.logo a {
+    text-decoration: none; 
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+.signup-btn {
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3;
+    color: #e0e0e0;
+}
+
+.signup-btn:hover {
+    background-color: #0056b3; 
+    color: #e0e0e0;
+}
+
+/* Estilos principais */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Container centralizado */
+  .container {
+    width: 300px;
+    height: 500px;
+    background: rgba(66, 66, 66, 0.9); /* Fundo com transparência */
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    position: relative
+  }
+  
+  /* Barra de controle da janela */
+  .window-controls {
+    position: absolute;
+    width: 100vh;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    gap: 8px;
+    -webkit-app-region: drag;
+  }
+  
+  /* Estilo para cada botão de controle da janela */
+  .window-btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    -webkit-app-region: no-drag;
+  }
+  
+  /* Botão de fechar (vermelho) */
+  .close-btn {
+    background-color: #ff5f57;
+  }
+  
+  /* Botão de minimizar (amarelo) */
+  .min-btn {
+    background-color: #ffbd2e;
+  }
+  
+  /* Círculo central */
+  .circle {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #6dd5ed, #2193b0);
+    border-radius: 50%;
+    margin-top: 50px;
+  }
+  
+  /* Botões de ação */
+  .buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mic-button, .cancel-button {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mic-button img, .cancel-button img {
+    width: 100%;
+  }
+  
+  .mic-button:hover {
+    background-color: #FFFEFE;
+  }
+
+  .cancel-button:hover {
+    background-color: #FC5353;
+  }
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+footer nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer nav a:hover {
+    color: #007bff;
+}
+
+
+@media (max-width: 1024px) {
+    .card {
+        flex-basis: 18%; 
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-basis: 18%; 
+        min-width: 120px; 
+    }
+}
